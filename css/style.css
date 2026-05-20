@@ -293,3 +293,15 @@ footer p {
 .whatsapp-btn:hover {
   background-color: #1da851;
 }
+
+/* ANIMAÇÕES */
+.animar {
+    opacity: 0;
+    transform: translate(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animar.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
