@@ -116,13 +116,13 @@ servico ul {
 }
 
 /* DEPOIMENTOS */
-#depoimento {
+#depoimentos {
     background-color: #fff;
     padding: 80px 40px;
     text-align: center;
 }
 
-#depoimento h2 {
+#depoimentos h2 {
     font-size: 36px;
     color: #1a1a2e;
     margin-bottom: 40px;
@@ -188,7 +188,7 @@ form {
     margin: 0 auto;
 }
 
-font input,
+form input,
 form textarea {
     padding: 15px;
     border: 2px solid #ddd;
@@ -225,4 +225,37 @@ footer p {
     font-size: 14px;
     color: #aaa;
     margin-bottom: 5px;
+}
+
+/* HAMBURGUER */
+.hamburguer {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .hamburguer {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a2e;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  nav ul.ativo {
+    display: flex;
+  }
 }
