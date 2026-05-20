@@ -47,6 +47,12 @@ nav ul li a {
     font-size: 16px;
 }
 
+nav ul li a:hover {
+    color: #e94560;
+    transition: color 0.3s;
+}
+
+
 /* HERO */
 #inicio {
     background-color: #16213e;
@@ -76,6 +82,11 @@ nav ul li a {
   border-radius: 5px;
   font-size: 18px;
   font-weight: bold;
+}
+
+#inicio a:hover {
+  background-color: #c73652;
+  transition: background-color 0.3s;
 }
 
 /* SERVIÇOS */
@@ -258,4 +269,27 @@ footer p {
   nav ul.ativo {
     display: flex;
   }
+}
+
+/* WHATSAPP FLUTUANTE */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;
+  color: #ffffff;
+  font-size: 32px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+  z-index: 999;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1da851;
 }
